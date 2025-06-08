@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: montserrat, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.App{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F1F7FF;
+  color:#1A293E;
+  min-height: 100vh;
+}
+
+.navbar{
+  border-bottom: 1px solid #eee;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+.navbar span{
+  font-size: 24px;
+  font-weight: 600;
+  margin: 12px 0;
+}
+.content{
+  max-width: 800px;
+}
+
+select {
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  width: 60px;
+  margin-bottom: 8px;
+  background-color: #F1F7FF;
+}
+
+#currencyHandlers {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+  margin: 140px auto;
+}
+
+.currencyHandler {
+  min-width: 250px;
+  border-radius: 8px;
+  margin: 20px 0
+}
+
+#arrowIcon{
+  width: 40px;
+  height: stretch;
+  display: flex;
+}
+
+.currencyHandler input {
+  width: 100%;
+  font-size: 24px;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  height: 48px;
+  padding: 12px;
+}
+
+#easyAccess {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 800px;
+}
+#easyAccess span{
+  padding: 8px 0;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  background-color: #31507C;
+  color: white;
+  margin: 40px 0 12px ;
+  width: 100%;
+}
+#easyAccessCurrencies{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 800px;
+  text-align: left;
+  margin-bottom: 160px;
+}
+
+.easy-access-currency{
+  flex: 1 1;   
+  flex-flow: row wrap;
+  min-width: 300px;
+  border-radius: 8px;
+  background-color: #ccc;
+  padding: 0px  20px ;
+  background-color: white;
+  border: 1px solid #eee;
+}
+
+footer {
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  color: #666;
+  border-top: 1
+}
+footer a{
+  color: #31507C;
+  padding: 8px;
+}
+
+@media screen and (max-width: 800px) {
+ 
+  .navbar {
+    font-size: 20px;
+  }
+  .navbar span {
+    font-size: 16px;
+  }
+  #currencyHandlers {
+    flex-direction: column;
+    align-items: center;
+  }
+  .currencyHandler {
+    width: 100%;
+    max-width: 400px;
+  }
+  #arrowIcon {
+    display: none;
+  }
+  #easyAccessCurrencies{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 800px;
+  text-align: left;
+}
+.easy-access-currency{
+  width: 400px;
+  border-radius: 8px;
+  background-color: #ccc;
+  padding: 0px  20px ;
+  background-color: white;
+  border: 1px solid #eee;
+}
+}
